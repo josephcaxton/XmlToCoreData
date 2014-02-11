@@ -13,12 +13,18 @@
 		7CDB2DCD18AA2435006D1D2E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB2DCB18AA2435006D1D2E /* Credits.rtf */; };
 		7CDB2DD018AA2435006D1D2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB2DCF18AA2435006D1D2E /* AppDelegate.m */; };
 		7CDB2DD318AA2435006D1D2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB2DD118AA2435006D1D2E /* MainMenu.xib */; };
-		7CDB2DD618AA2435006D1D2E /* XmlToCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB2DD418AA2435006D1D2E /* XmlToCoreData.xcdatamodeld */; };
 		7CDB2DD818AA2436006D1D2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB2DD718AA2436006D1D2E /* Images.xcassets */; };
 		7CDB2DDF18AA2436006D1D2E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDB2DDE18AA2436006D1D2E /* XCTest.framework */; };
 		7CDB2DE018AA2436006D1D2E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDB2DBC18AA2435006D1D2E /* Cocoa.framework */; };
 		7CDB2DE818AA2436006D1D2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB2DE618AA2436006D1D2E /* InfoPlist.strings */; };
 		7CDB2DEA18AA2436006D1D2E /* XmlToCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB2DE918AA2436006D1D2E /* XmlToCoreDataTests.m */; };
+		7CF26AC518AA274100B7FBAE /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CF26AC218AA274100B7FBAE /* Data.xcdatamodeld */; };
+		7CF26AD318AA457500B7FBAE /* Answers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF26AC818AA457500B7FBAE /* Answers.m */; };
+		7CF26AD418AA457500B7FBAE /* DBVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF26ACA18AA457500B7FBAE /* DBVersion.m */; };
+		7CF26AD518AA457500B7FBAE /* lk_QuestionTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF26ACC18AA457500B7FBAE /* lk_QuestionTemplate.m */; };
+		7CF26AD618AA457500B7FBAE /* QuestionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF26ACE18AA457500B7FBAE /* QuestionHeader.m */; };
+		7CF26AD718AA457500B7FBAE /* QuestionItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF26AD018AA457500B7FBAE /* QuestionItems.m */; };
+		7CF26AD818AA457500B7FBAE /* Topics.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF26AD218AA457500B7FBAE /* Topics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +51,26 @@
 		7CDB2DCE18AA2435006D1D2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CDB2DCF18AA2435006D1D2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7CDB2DD218AA2435006D1D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		7CDB2DD518AA2435006D1D2E /* XmlToCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XmlToCoreData.xcdatamodel; sourceTree = "<group>"; };
 		7CDB2DD718AA2436006D1D2E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7CDB2DDD18AA2436006D1D2E /* XmlToCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XmlToCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDB2DDE18AA2436006D1D2E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7CDB2DE518AA2436006D1D2E /* XmlToCoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XmlToCoreDataTests-Info.plist"; sourceTree = "<group>"; };
 		7CDB2DE718AA2436006D1D2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7CDB2DE918AA2436006D1D2E /* XmlToCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XmlToCoreDataTests.m; sourceTree = "<group>"; };
+		7CF26AC318AA274100B7FBAE /* Data 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Data 2.xcdatamodel"; sourceTree = "<group>"; };
+		7CF26AC418AA274100B7FBAE /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
+		7CF26AC718AA457500B7FBAE /* Answers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answers.h; sourceTree = "<group>"; };
+		7CF26AC818AA457500B7FBAE /* Answers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answers.m; sourceTree = "<group>"; };
+		7CF26AC918AA457500B7FBAE /* DBVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBVersion.h; sourceTree = "<group>"; };
+		7CF26ACA18AA457500B7FBAE /* DBVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBVersion.m; sourceTree = "<group>"; };
+		7CF26ACB18AA457500B7FBAE /* lk_QuestionTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lk_QuestionTemplate.h; sourceTree = "<group>"; };
+		7CF26ACC18AA457500B7FBAE /* lk_QuestionTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lk_QuestionTemplate.m; sourceTree = "<group>"; };
+		7CF26ACD18AA457500B7FBAE /* QuestionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionHeader.h; sourceTree = "<group>"; };
+		7CF26ACE18AA457500B7FBAE /* QuestionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionHeader.m; sourceTree = "<group>"; };
+		7CF26ACF18AA457500B7FBAE /* QuestionItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionItems.h; sourceTree = "<group>"; };
+		7CF26AD018AA457500B7FBAE /* QuestionItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionItems.m; sourceTree = "<group>"; };
+		7CF26AD118AA457500B7FBAE /* Topics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topics.h; sourceTree = "<group>"; };
+		7CF26AD218AA457500B7FBAE /* Topics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +97,7 @@
 		7CDB2DB018AA2435006D1D2E = {
 			isa = PBXGroup;
 			children = (
+				7CF26AC618AA456500B7FBAE /* Datamodel */,
 				7CDB2DC218AA2435006D1D2E /* XmlToCoreData */,
 				7CDB2DE318AA2436006D1D2E /* XmlToCoreDataTests */,
 				7CDB2DBB18AA2435006D1D2E /* Frameworks */,
@@ -117,11 +137,11 @@
 		7CDB2DC218AA2435006D1D2E /* XmlToCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				7CF26AC218AA274100B7FBAE /* Data.xcdatamodeld */,
 				7CDB2DCE18AA2435006D1D2E /* AppDelegate.h */,
 				7CDB2DCF18AA2435006D1D2E /* AppDelegate.m */,
 				7CDB2DD118AA2435006D1D2E /* MainMenu.xib */,
 				7CDB2DD718AA2436006D1D2E /* Images.xcassets */,
-				7CDB2DD418AA2435006D1D2E /* XmlToCoreData.xcdatamodeld */,
 				7CDB2DC318AA2435006D1D2E /* Supporting Files */,
 			);
 			path = XmlToCoreData;
@@ -155,6 +175,25 @@
 				7CDB2DE618AA2436006D1D2E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CF26AC618AA456500B7FBAE /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				7CF26AC718AA457500B7FBAE /* Answers.h */,
+				7CF26AC818AA457500B7FBAE /* Answers.m */,
+				7CF26AC918AA457500B7FBAE /* DBVersion.h */,
+				7CF26ACA18AA457500B7FBAE /* DBVersion.m */,
+				7CF26ACB18AA457500B7FBAE /* lk_QuestionTemplate.h */,
+				7CF26ACC18AA457500B7FBAE /* lk_QuestionTemplate.m */,
+				7CF26ACD18AA457500B7FBAE /* QuestionHeader.h */,
+				7CF26ACE18AA457500B7FBAE /* QuestionHeader.m */,
+				7CF26ACF18AA457500B7FBAE /* QuestionItems.h */,
+				7CF26AD018AA457500B7FBAE /* QuestionItems.m */,
+				7CF26AD118AA457500B7FBAE /* Topics.h */,
+				7CF26AD218AA457500B7FBAE /* Topics.m */,
+			);
+			name = Datamodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +294,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CDB2DD618AA2435006D1D2E /* XmlToCoreData.xcdatamodeld in Sources */,
 				7CDB2DD018AA2435006D1D2E /* AppDelegate.m in Sources */,
+				7CF26AD618AA457500B7FBAE /* QuestionHeader.m in Sources */,
+				7CF26AD418AA457500B7FBAE /* DBVersion.m in Sources */,
 				7CDB2DC918AA2435006D1D2E /* main.m in Sources */,
+				7CF26AD718AA457500B7FBAE /* QuestionItems.m in Sources */,
+				7CF26AC518AA274100B7FBAE /* Data.xcdatamodeld in Sources */,
+				7CF26AD518AA457500B7FBAE /* lk_QuestionTemplate.m in Sources */,
+				7CF26AD818AA457500B7FBAE /* Topics.m in Sources */,
+				7CF26AD318AA457500B7FBAE /* Answers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +513,7 @@
 				7CDB2DEF18AA2436006D1D2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CDB2DF018AA2436006D1D2E /* Build configuration list for PBXNativeTarget "XmlToCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -476,17 +522,19 @@
 				7CDB2DF218AA2436006D1D2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7CDB2DD418AA2435006D1D2E /* XmlToCoreData.xcdatamodeld */ = {
+		7CF26AC218AA274100B7FBAE /* Data.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7CDB2DD518AA2435006D1D2E /* XmlToCoreData.xcdatamodel */,
+				7CF26AC318AA274100B7FBAE /* Data 2.xcdatamodel */,
+				7CF26AC418AA274100B7FBAE /* Data.xcdatamodel */,
 			);
-			currentVersion = 7CDB2DD518AA2435006D1D2E /* XmlToCoreData.xcdatamodel */;
-			path = XmlToCoreData.xcdatamodeld;
+			currentVersion = 7CF26AC418AA274100B7FBAE /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

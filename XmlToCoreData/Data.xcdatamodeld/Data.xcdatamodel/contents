@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Answers" representedClassName="Answers" syncable="YES">
+        <attribute name="AnswerText" attributeType="String" syncable="YES"/>
+        <attribute name="Correct" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="PictureAnnotation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="Reason" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="QuestionItem" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="QuestionItems" inverseName="Answers1" inverseEntity="QuestionItems" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="DBVersion" representedClassName="DBVersion" syncable="YES">
+        <attribute name="VersionNumber" attributeType="Integer 16" defaultValueString="1" syncable="YES"/>
+    </entity>
+    <entity name="lk_QuestionTemplate" representedClassName="lk_QuestionTemplate" syncable="YES">
+        <attribute name="Description" attributeType="String" syncable="YES"/>
+        <attribute name="LoggedDate" optional="YES" attributeType="Date" defaultDateTimeInterval="413812800" defaultValueString="&quot;now&quot;" syncable="YES"/>
+        <relationship name="QuestionHeaders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QuestionHeader" inverseName="QuestionTemplate" inverseEntity="QuestionHeader" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="QuestionHeader" representedClassName="QuestionHeader" syncable="YES">
+        <attribute name="Autorize" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="DateAutorized" attributeType="Date" defaultDateTimeInterval="413812800" defaultValueString="&quot;now&quot;" syncable="YES"/>
+        <attribute name="LoggedDate" attributeType="Date" defaultDateTimeInterval="413812800" defaultValueString="&quot;now&quot;" syncable="YES"/>
+        <attribute name="QuestionInfo" optional="YES" attributeType="Transformable" valueTransformerName="ImageToDataTransformer" syncable="YES"/>
+        <relationship name="QuestionHeader_Topic" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Topics" inverseName="Topic_QuestionHeader" inverseEntity="Topics" indexed="YES" syncable="YES"/>
+        <relationship name="QuestionItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QuestionItems" inverseName="QuestionHeader1" inverseEntity="QuestionItems" indexed="YES" syncable="YES"/>
+        <relationship name="QuestionTemplate" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="lk_QuestionTemplate" inverseName="QuestionHeaders" inverseEntity="lk_QuestionTemplate" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="QuestionItems" representedClassName="QuestionItems" syncable="YES">
+        <attribute name="AccessLevel" attributeType="Integer 16" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="AllocatedMark" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="AttachmentFile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="AudioLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="Difficulty" attributeType="Integer 16" minValueString="1" maxValueString="3" defaultValueString="1" syncable="YES"/>
+        <attribute name="NegativeMarking" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="Question" attributeType="String" syncable="YES"/>
+        <attribute name="RequireActivityMarker" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="VideoLink" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="Answers1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Answers" inverseName="QuestionItem" inverseEntity="Answers" indexed="YES" syncable="YES"/>
+        <relationship name="QuestionHeader1" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="QuestionHeader" inverseName="QuestionItems" inverseEntity="QuestionHeader" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Topics" representedClassName="Topics" syncable="YES">
+        <attribute name="TopicName" attributeType="String" syncable="YES"/>
+        <relationship name="Topic_QuestionHeader" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QuestionHeader" inverseName="QuestionHeader_Topic" inverseEntity="QuestionHeader" indexed="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Topics" positionX="9" positionY="51" width="128" height="75"/>
+        <element name="DBVersion" positionX="189" positionY="207" width="128" height="60"/>
+        <element name="lk_QuestionTemplate" positionX="18" positionY="198" width="128" height="90"/>
+        <element name="QuestionItems" positionX="360" positionY="63" width="128" height="210"/>
+        <element name="Answers" positionX="540" positionY="66" width="128" height="120"/>
+        <element name="QuestionHeader" positionX="187" positionY="27" width="128" height="153"/>
+    </elements>
+</model>

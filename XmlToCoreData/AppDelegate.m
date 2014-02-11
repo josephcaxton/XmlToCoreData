@@ -16,7 +16,17 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    NSManagedObjectContext *context =[self managedObjectContext];
+	
+	if (!context) {
+		
+        NSAlert *ContextError  = [[NSAlert alloc] init];
+        [ContextError setMessageText:@"Cannot create context"];
+        [ContextError setInformativeText:@"Error creating a connection to database"];
+        [ContextError runModal];
+       
+        }
+
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "org.Caxtonidowu.v1.XmlToCoreData" in the user's Application Support directory.
@@ -34,7 +44,7 @@
         return _managedObjectModel;
     }
 	
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"XmlToCoreData" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Data" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -81,9 +91,9 @@
         }
     }
     
-    NSURL *url = [applicationFilesDirectory URLByAppendingPathComponent:@"XmlToCoreData.storedata"];
+    NSURL *url = [applicationFilesDirectory URLByAppendingPathComponent:@"Data.sqlite"];
     NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
-    if (![coordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:nil error:&error]) {
+    if (![coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:url options:nil error:&error]) {
         [[NSApplication sharedApplication] presentError:error];
         return nil;
     }
