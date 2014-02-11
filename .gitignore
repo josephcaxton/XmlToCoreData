@@ -1,0 +1,30 @@
+_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+*.xccheckout
+=======
+>>>>>>> 099dc5767e2ec3211fcaec907365a21cd1e2365d
+=======
+>>>>>>> 099dc5767e2ec3211fcaec907365a21cd1e2365d
+=======
+>>>>>>> 099dc5767e2ec3211fcaec907365a21cd1e2365d
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+
+#CocoaPods
+Pods
